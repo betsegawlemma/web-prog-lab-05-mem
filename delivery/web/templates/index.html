@@ -6,9 +6,13 @@
     </div>
 </div>
 <div class="container">
-    <hr>
-    <p><b>Name:</b> {{ .Name }}</p>
-    <p><b>Description:</b> {{ .Description }}</p>
-    <img src="/assets/img/{{ .Image }}" width="100px" heght="120px" />
+        <div class="card border-light shadow-sm" style="width: 18rem;">
+            <img src="/assets/img/{{ .Image }}" class="card-img-top" />
+            <div class="card-body">
+                <h4 class="card-title">{{ .Name }}</h4>
+                <p class="card-text"> {{ .Description }} </p>
+                <a href="#" class="card-link">Check Menu</a>
+            </div>
+        </div>
 </div>
 {{ end }}
